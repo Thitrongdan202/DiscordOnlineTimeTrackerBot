@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-online-tracker"
+version = "0.1.0"
+description = "Discord bot that tracks members' online presence durations"
+readme = "README.md"
+authors = [{name = "Discord Online Tracker Maintainers"}]
+requires-python = ">=3.10"
+dependencies = [
+    "discord.py>=2.3.2,<3.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.23"
+]
